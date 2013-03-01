@@ -131,8 +131,9 @@
 		22F8EC1616D97E0D00161A36 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC1516D97E0D00161A36 /* vec4.c */; };
 		22F8EC1B16D97E0D00161A36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC1A16D97E0D00161A36 /* main.m */; };
 		22F8EC1E16D97E0D00161A36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC1D16D97E0D00161A36 /* AppDelegate.m */; };
-		22F8EC2116D97E0D00161A36 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC2016D97E0D00161A36 /* HelloWorldLayer.m */; };
-		22F8EC2416D97E0D00161A36 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC2316D97E0D00161A36 /* IntroLayer.m */; };
+		22F8EC2C16D9EDDD00161A36 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC2B16D9EDDD00161A36 /* MainScene.m */; };
+		22F8EC2F16DC766B00161A36 /* CameraLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC2E16DC766B00161A36 /* CameraLayer.m */; };
+		22F8EC3616DD41A600161A36 /* ActionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F8EC3516DD41A600161A36 /* ActionLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -394,10 +395,12 @@
 		22F8EC1A16D97E0D00161A36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22F8EC1C16D97E0D00161A36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22F8EC1D16D97E0D00161A36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		22F8EC1F16D97E0D00161A36 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		22F8EC2016D97E0D00161A36 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
-		22F8EC2216D97E0D00161A36 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
-		22F8EC2316D97E0D00161A36 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		22F8EC2A16D9EDDD00161A36 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		22F8EC2B16D9EDDD00161A36 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
+		22F8EC2D16DC766A00161A36 /* CameraLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraLayer.h; sourceTree = "<group>"; };
+		22F8EC2E16DC766B00161A36 /* CameraLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraLayer.m; sourceTree = "<group>"; };
+		22F8EC3416DD41A600161A36 /* ActionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionLayer.h; sourceTree = "<group>"; };
+		22F8EC3516DD41A600161A36 /* ActionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,12 +459,14 @@
 		22F8EAA416D97E0900161A36 /* AugRealityTest */ = {
 			isa = PBXGroup;
 			children = (
+				22F8EC3416DD41A600161A36 /* ActionLayer.h */,
+				22F8EC3516DD41A600161A36 /* ActionLayer.m */,
+				22F8EC2D16DC766A00161A36 /* CameraLayer.h */,
+				22F8EC2E16DC766B00161A36 /* CameraLayer.m */,
+				22F8EC2A16D9EDDD00161A36 /* MainScene.h */,
+				22F8EC2B16D9EDDD00161A36 /* MainScene.m */,
 				22F8EC1C16D97E0D00161A36 /* AppDelegate.h */,
 				22F8EC1D16D97E0D00161A36 /* AppDelegate.m */,
-				22F8EC1F16D97E0D00161A36 /* HelloWorldLayer.h */,
-				22F8EC2016D97E0D00161A36 /* HelloWorldLayer.m */,
-				22F8EC2216D97E0D00161A36 /* IntroLayer.h */,
-				22F8EC2316D97E0D00161A36 /* IntroLayer.m */,
 				22F8EAA516D97E0900161A36 /* Resources */,
 				22F8EABF16D97E0900161A36 /* libs */,
 				22F8EC1816D97E0D00161A36 /* Supporting Files */,
@@ -1007,8 +1012,9 @@
 				22F8EC1616D97E0D00161A36 /* vec4.c in Sources */,
 				22F8EC1B16D97E0D00161A36 /* main.m in Sources */,
 				22F8EC1E16D97E0D00161A36 /* AppDelegate.m in Sources */,
-				22F8EC2116D97E0D00161A36 /* HelloWorldLayer.m in Sources */,
-				22F8EC2416D97E0D00161A36 /* IntroLayer.m in Sources */,
+				22F8EC2C16D9EDDD00161A36 /* MainScene.m in Sources */,
+				22F8EC2F16DC766B00161A36 /* CameraLayer.m in Sources */,
+				22F8EC3616DD41A600161A36 /* ActionLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
